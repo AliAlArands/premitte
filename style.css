@@ -1,0 +1,14 @@
+:root {
+  --color-secondary: #8a1e86;
+  --color-variant: #fcb43a;
+  --color-primary: #212529;
+}
+
+
+/* TODO: Change the font family to Poppoins from google fonts */
+html {
+  font-size: 62.5%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
