@@ -9,28 +9,51 @@
     <title>Premitte</title>
   </head>
   <body>
-    <div class="container nav">
-      <a href="#" class="logo-ai"
-        ><img src="./assets/logo Ai 1.svg" alt=""
-      /></a>
-      <ul class="nav__items">
-        <li class="nav__item"><a href="" class="nav__link"> Buy</a></li>
-        <li class="nav__item">
-          <a href="" class="nav__link">Discover Deals</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">How it works</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">For partners</a>
-        </li>
-        <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
-      </ul>
-      <div class="partner-with-us">
-        <a href="#" class="partner">Partner with us</a>
-        <button class="btn-theme btn-download">Download app</button>
+    <nav class="container nav">
+      <div class="nav-content">
+        <a href="#" class="logo-ai"
+          ><img src="./assets/logo Ai 1.svg" alt=""
+        /></a>
+        <ul class="nav__items">
+          <li class="nav__item"><a href="" class="nav__link"> Buy</a></li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Discover Deals</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">How it works</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">For partners</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+        </ul>
+        <div class="partner-with-us">
+          <a href="#" class="partner">Partner with us</a>
+          <button class="btn-theme btn-download">Download app</button>
+        </div>
+        <svg
+          class="nav__menu"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
       </div>
-    </div>
+      <ul class="navh">
+        <li class="navh__item">Buy</li>
+        <li class="navh__item">Discover Deals</li>
+        <li class="navh__item">How it works</li>
+        <li class="navh__item">For partners</li>
+        <li class="navh__item navh__item-last">Blog</li>
+      </ul>
+    </nav>
     <div class="breaker"></div>
 
     <section class="container hero">
@@ -474,28 +497,6 @@
     </footer>
 
     <script src="./script/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".articals-swiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          // 600: {
-          //   slidesPerView: 1,
-          // },
-          940: {
-            slidesPerView: 2,
-            
-          },
-          1375: {
-            slidesPerView: 3
-          }
-        },
-      });
-    </script>
+    <script src="./script/script.js"></script>
   </body>
 </html>

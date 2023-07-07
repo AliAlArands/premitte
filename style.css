@@ -70,6 +70,7 @@ a {
 .breaker {
   height: 1px;
   background-color: black;
+  /* width: 100%; */
 }
 
 button {
@@ -93,19 +94,29 @@ button {
   font-size: 1.6rem;
 }
 
+.show {
+  display: block !important;
+}
+
 /* Navigation Styles */
 .nav {
   padding-top: 30px;
   padding-bottom: 30px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   font-size: 1.6rem;
   font-weight: 500;
 }
 
+.nav-content {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+
 .logo-ai {
-  margin-right: 3.125%;
+  margin-right: 4.8%;
 }
 
 .nav__items {
@@ -140,6 +151,54 @@ button {
 
 .btn-download {
   padding: 10px 18px;
+}
+
+.nav__menu {
+  display: none;
+  color: var(--color-secondary);
+  width: 40px;
+  height: 40px;
+}
+
+.navh {
+  width: 96vw;
+  display: none;
+}
+.navh__item {
+  padding: 15px 0;
+  border-bottom: 1px solid hsla(302, 64%, 33%, 0.45);
+  width: 100%;
+  text-align: center;
+}
+
+.navh__item-last {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 1270px) {
+  .partner-with-us {
+    display: none;
+  }
+
+  .nav__items {
+    width: 70%;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .nav__items {
+    display: none;
+  }
+
+  .nav__menu {
+    display: block;
+  }
+
+  /* .nav {
+    padding-bottom: 0;
+  } */
 }
 
 /* Hero Section */
