@@ -419,7 +419,10 @@ button {
   color: #262c2db3;
   font-size: 1.6rem;
 }
-
+.feature__image__main {
+  width: 90%;
+  object-fit: cover;
+}
 @media screen and (max-width: 1150px) {
   .features__grid {
     grid-template-columns: 1fr;
@@ -444,6 +447,12 @@ button {
     font-weight: 400;
     line-height: 24px;
     width: 90%;
+  }
+
+  .btn-discover {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 20px;
   }
 }
 
@@ -500,6 +509,7 @@ button {
 .btn-step {
   padding: 15px 4%;
   border-radius: 25px;
+  margin-bottom: 30px;
 }
 
 .steps__heading {
@@ -599,6 +609,10 @@ button {
 
   .steps-image-two {
     display: none;
+  }
+
+  .steps-images {
+    padding-left: 0;
   }
 }
 
