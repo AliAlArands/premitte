@@ -273,7 +273,9 @@
               <span class="artical__writer">John Doe • </span>
               <span class="artical__date">20 Jan 2022</span>
             </div>
-            <h4 class="artical__heading">Blog headline goes here</h4>
+            <h4 class="artical__heading">
+              <a href="#">Blog headline goes here</a>
+            </h4>
             <div class="artical__desc">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. At lorem
               mauris dolor proin non.
@@ -287,7 +289,9 @@
               <span class="artical__writer">John Doe • </span>
               <span class="artical__date">20 Jan 2022</span>
             </div>
-            <h4 class="artical__heading">Blog headline goes here</h4>
+            <h4 class="artical__heading">
+              <a href="#">Blog headline goes here</a>
+            </h4>
             <div class="artical__desc">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. At lorem
               mauris dolor proin non.
@@ -301,7 +305,9 @@
               <span class="artical__writer">John Doe • </span>
               <span class="artical__date">20 Jan 2022</span>
             </div>
-            <h4 class="artical__heading">Blog headline goes here</h4>
+            <h4 class="artical__heading">
+              <a href="#">Blog headline goes here</a>
+            </h4>
             <div class="artical__desc">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. At lorem
               mauris dolor proin non.
@@ -315,7 +321,9 @@
               <span class="artical__writer">John Doe • </span>
               <span class="artical__date">20 Jan 2022</span>
             </div>
-            <h4 class="artical__heading">Blog headline goes here</h4>
+            <h4 class="artical__heading">
+              <a href="#">Blog headline goes here</a>
+            </h4>
             <div class="artical__desc">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. At lorem
               mauris dolor proin non.
@@ -359,13 +367,133 @@
       </div>
     </section>
 
+    <section class="cta-section background">
+      <div class="left">
+        <h2 class="cta-heading">
+          Enjoy the experience of shopping more and
+          <span class="cta-focus">paying less!</span>
+        </h2>
+        <div class="hero__download">
+          <a href="#" class="hero__download__image"
+            ><img src="./assets/cta-download.svg" alt=""
+          /></a>
+          <a href="#" class="hero__download__image"
+            ><img src="./assets/cta-download-android.svg" alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="hero__image">
+        <img src="./assets/cta-image.png" alt="" />
+        <ul class="hero__reviews">
+          <li class="review background">
+            <img src="./assets/Avatar.jpg" alt="" class="hero__review__image" />
+            <div class="review__content">
+              <div>
+                <div class="review__user">
+                  Sara Fray
+                  <span class="review__user__content">just saved 20%</span>
+                </div>
+              </div>
+              <div class="review__more__content">At grosery store</div>
+            </div>
+          </li>
+          <li class="review background">
+            <img src="./assets/Avatar.jpg" alt="" class="hero__review__image" />
+            <div class="review__content">
+              <div>
+                <div class="review__user">
+                  Sara Fray
+                  <span class="review__user__content">just saved 20%</span>
+                </div>
+              </div>
+              <div class="review__more__content">At grosery store</div>
+            </div>
+          </li>
+          <li class="review background">
+            <img src="./assets/Avatar.jpg" alt="" class="hero__review__image" />
+            <div class="review__content">
+              <div>
+                <div class="review__user">
+                  Sara Fray
+                  <span class="review__user__content">just saved 20%</span>
+                </div>
+              </div>
+              <div class="review__more__content">At grosery store</div>
+            </div>
+          </li>
+          <li class="review background">
+            <img src="./assets/Avatar.jpg" alt="" class="hero__review__image" />
+            <div class="review__content">
+              <div>
+                <div class="review__user">
+                  Sara Fray
+                  <span class="review__user__content">just saved 20%</span>
+                </div>
+              </div>
+              <div class="review__more__content">At grosery store</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="container">
+      <div class="footer-up">
+        <div class="footer-left">
+          <img src="./assets/footer logo Ai.svg" alt="" />
+          <div class="footer-text">
+            Design amazing digital experiences that create more happy in the
+            world.
+          </div>
+          <ul class="footer-list">
+            <li class="footer-list__item">Home</li>
+            <li class="footer-list__item">
+              Company <img src="./assets/chevron-down.svg" alt="" />
+            </li>
+            <li class="footer-list__item">
+              Support <img src="./assets/chevron-down.svg" alt="" />
+            </li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <div class="footer-download">Download App:</div>
+          <img src="./assets/footer-download-iphone.svg" alt="" />
+          <img src="./assets/footer-download.svg" alt="" />
+        </div>
+      </div>
+      <div class="breaker"></div>
+      <div class="last">
+        <p>©2022 Premitto LLC. All rights reserved.</p>
+        <div class="social-contact">
+          <img src="./assets/insta.svg" alt="" />
+          <img src="./assets/twitter.svg" alt="" />
+          <img src="./assets/linkedin.svg" alt="" />
+          <img src="./assets/tiktok.svg" alt="" />
+          <img src="./assets/facebook.svg" alt="" />
+        </div>
+      </div>
+    </footer>
+
     <script src="./script/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".articals-swiper", {
-        slidesPerView: 3,
+        slidesPerView: 1,
+        spaceBetween: 30,
+
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          // 600: {
+          //   slidesPerView: 1,
+          // },
+          940: {
+            slidesPerView: 2,
+            
+          },
+          1375: {
+            slidesPerView: 3
+          }
         },
       });
     </script>
