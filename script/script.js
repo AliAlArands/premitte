@@ -1,7 +1,5 @@
 var swiper = new Swiper(".articals-swiper", {
-  slidesPerView: 1,
   spaceBetween: 30,
-
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -10,7 +8,7 @@ var swiper = new Swiper(".articals-swiper", {
     // 600: {
     //   slidesPerView: 1,
     // },
-    940: {
+    740: {
       slidesPerView: 2,
     },
     1375: {
