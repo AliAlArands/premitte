@@ -41,13 +41,16 @@ html {
   font-family: "poppins", Arial, Helvetica, sans-serif;
 }
 
+h1 {
+  font-size: 5.5rem;
+  line-height: 72px;
+  letter-spacing: -1.1px;
+}
+
 h1,
 h2,
 h3 {
-  font-size: 5.5rem;
   font-weight: 600;
-  line-height: 72px;
-  letter-spacing: -1.1px;
 }
 
 ul {
@@ -89,6 +92,7 @@ button {
   color: white;
   font-size: 1.6rem;
 }
+
 /* Navigation Styles */
 .nav {
   padding-top: 30px;
@@ -254,20 +258,22 @@ button {
 
 /*  TODO: remove width duplication */
 .btn-discover {
-
-  padding: 15px 7.8%;
+  padding: 15px 4%;
   border-radius: 25px;
   margin-bottom: 28px;
 }
 
 .features__heading {
-  width: 70.5%;
+  width: 65.5%;
+  font-size: 5.5rem;
+  line-height: 72px;
+  letter-spacing: -1.1px;
 
   margin-bottom: 20px;
 }
 
 .features__description {
-  width: 70.5%;
+  width: 65.5%;
 
   font-size: 2rem;
   line-height: 35px;
@@ -297,6 +303,8 @@ button {
   /* padding: 7.5px 9px 13.5px 12px; */
 }
 .feature__heading {
+  line-height: 72px;
+  letter-spacing: -1.1px;
   font-weight: 500;
   margin-bottom: 20px;
   font-size: 2rem;
@@ -307,71 +315,72 @@ button {
   font-size: 1.6rem;
 }
 
-
 /* Offers Section */
 .steps {
-    padding-top: 64px;
-    padding-bottom: 64px;
-    width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    gap: 28px;
-    margin: 0 auto;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 28px;
+  margin: 0 auto;
 }
 
 .btn-step {
-    padding: 15px 4%;
-    border-radius: 25px;
+  padding: 15px 4%;
+  border-radius: 25px;
 }
 
 .steps__heading {
-    width: 82%;
-    margin: 0 auto;
+  width: 82%;
+  margin: 0 auto;
+  font-size: 5.5rem;
+  line-height: 72px;
+  letter-spacing: -1.1px;
 }
 
 .steps__decsription__head {
-    font-weight: 600;
-    font-size: 2.4rem;
-    line-height: 36px;
-    color: #707070;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 36px;
+  color: #707070;
 }
 
 .steps__description__text {
-    line-height: 30px;
-    font-size: 1.6rem;
-    color: var(--color-primary--light);
+  line-height: 30px;
+  font-size: 1.6rem;
+  color: var(--color-primary--light);
 }
 
 /* Steps container Section */
 .steps-images {
-    text-align: center;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 25%;
-    margin-bottom: 90px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 25%;
+  margin-bottom: 90px;
 }
 
 .steps-image-two {
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  bottom: 0;
 
-    left: 26%;
-    z-index: -1;
+  left: 26%;
+  z-index: -1;
 }
 
-
 .steps-container {
-    margin-top: 90px;
-    display: flex;
-    text-align: center;
-    line-height: 30px;
-    position: relative;
-    margin-bottom: 250px;
+  margin-top: 90px;
+  display: flex;
+  text-align: center;
+  line-height: 30px;
+  position: relative;
+  margin-bottom: 250px;
 }
 
 .step--selected {
@@ -383,14 +392,12 @@ button {
   height: 4px;
   background: rgb(246, 172, 32);
   background: linear-gradient(130deg, #861889 25%, #ffb838 100%);
-  
 }
 
 .step {
-  padding: 0 55px;
+  padding: 0 3.8%;
   border-top: 4px solid #2929291a;
 }
-
 
 .step__heading {
   font-weight: 600;
@@ -408,5 +415,108 @@ button {
 }
 
 .selected {
-  color: var(--color-secondary) !important;
+  color: var(--color-secondary);
+}
+
+/* Blog Section */
+
+.blog {
+  padding-bottom: 96px;
+}
+
+.blog__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.btn-blog {
+  padding: 15px 2%;
+  border-radius: 25px;
+  margin-bottom: 28px;
+}
+
+.blog__heading {
+  width: 58%;
+  font-size: 4rem;
+  line-height: 60px;
+  letter-spacing: -0.8px;
+  color: var(--color-primary);
+}
+
+.blog__description {
+  line-height: 3rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  width: 25.5%;
+}
+
+.articals {
+  gap: 32px;
+  /* margin-bottom: 185px; */
+  padding: 0;
+}
+
+.artical {
+  margin-bottom: 32px;
+}
+
+.artical__image {
+  margin-bottom: 35px;
+}
+
+.artical__info {
+  color: #861889;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+
+.artical__heading {
+  color: var(--color-primary);
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+
+.artical__desc {
+  color: #707070;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.arrows {
+  width: 10%;
+  height: 50px;
+  position: relative;
+}
+
+.arrow {
+  width: 56px;
+  height: 56px;
+  color: gray;
+}
+
+/* Swiper styles */
+
+/* .swiper-wrapper {
+  overflow: hidden;
+} */
+
+.swiper-button-next::after {
+  content: "" !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.swiper-button-prev::after {
+  content: "" !important;
 }
